@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: "vampiro";
+    src: url('fonts/Vampire\ Wars\ Italic.otf');
+}
+li {
+    display: inline-block;
+    background-color: aquamarine;
+    border: 5px solid black;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "vampiro";
+}
+
+h2 {
+    font-family: 'Inspiration', cursive;
+    font-size: 16px;
+}
+#p1 {
+    font-size: 16px;
+}
+
+
+#p2 {
+    font-size: 1em;
+}
+
+#p3 {
+    font-size: 1vw;
+    /* font-size: 1vh; */
+}
+
+img {
+    width: 50vw;
+    height: 50vh;
+    /* width: 50vmin; */
+}
+
+/* span {
+    background-color: aquamarine;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+div {
+    background-color: orange;
+    width: 80px;
+    height: 80px;
+    border: 10px solid red;
+    margin: 10px;
+    padding: 15px;
+    display: inline-block;
+} */

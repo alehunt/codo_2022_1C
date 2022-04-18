@@ -1,0 +1,68 @@
+<!-- Container  fluid -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tipos de contenedores</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .borde {border: 1px black solid;}
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap 4 requiere un elemento contenedor para envolver el contenido del sitio. -->
+
+    <!-- La clase .container proporciona un contenedor de ancho fijo sensible -->
+    <div class="container">
+        <h1> Tres columnas de igual ancho en una clase container</h1>
+        <p> Nota: intente agregar un nuevo div con class = "col" dentro de la clase de row; esto creará 4 columnas de
+            igual ancho. </p>
+        <div class="row">
+            <div class="col" style="background-color:lavender;">.col</div>
+            <div class="col" style="background-color:orange;">.col</div>
+            <div class="col" style="background-color:lavender;">.col</div>
+            <!-- <div class="col" style="background-color:orange;">.col</div> -->
+        </div>
+    </div>
+    <br><br>
+    <!-- La clase .container-fluid proporciona un contenedor de ancho completo, que abarca todo el ancho de la ventana gráfica. -->
+    <div class="container-fluid">
+        <h1> Tres columnas de igual ancho en una clase container-fluid</h1>
+        <p> Nota: intente agregar un nuevo div con class = "col" dentro de la clase de row; esto creará 4 columnas de igual ancho. </p>
+        <div class="row">
+            <div class="col" style="background-color:lavender;">.col</div>
+            <div class="col" style="background-color:orange;">.col</div>
+            <div class="col" style="background-color:lavender;">.col</div>
+            <!-- <div class="col" style="background-color:orange;">.col</div> -->
+        </div>
+        <br>
+        <div class="row">
+            <div class="col" style="background-color:lavender;">.col</div>
+            <div class="col" style="background-color:orange;">.col</div>
+        </div>
+    </div>
+    <br><br>
+    <!-- .container- {breakpoint}, que tiene un ​width: 100% ​hasta el breakpoint especificado. -->
+    <div class="container">
+        <h1> Cuatro columnas de igual ancho en una clase container</h1>
+        <p> Nota: container- {breakpoint}, que tiene un ​width: 100% ​hasta el breakpoint especificado.
+            <br> Intente comentar la línea del w-100 para ver cómo se comporta el salto de línea </p>
+        <p> Más info clic <a href="https://getbootstrap.com/docs/4.0/layout/grid/#equal-width-multi-row" target="_blank">Aquí</a></p>
+        <div class="row">
+            <div class="col borde">1</div>
+            <div class="col borde">2</div>
+            <!-- La clase "w-100" establece un "punto de quiebre o breakpoint"-->
+            <div class="w-100"></div>
+            <div class="col borde">3</div>
+            <div class="col borde">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

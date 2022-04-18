@@ -1,0 +1,42 @@
+*{font-family: Verdana;}
+
+/*Bordes y fondo para los contenedores*/
+.contenedor1, .contenedor2, .contenedor3, .contenedor4{
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+/*Ítems*/
+.contenedor1 > div, .contenedor2 > div, .contenedor3 > div, .contenedor4 > div{
+    background-color: lightgray;
+    border: 1px solid gray;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/*Propiedades display, flex-direction y flex-wrap*/
+.contenedor1 {
+    display: flex; /*flex | inline-flex*/
+    flex-direction: row; /*row | row-reverse | column | column-reverse*/
+    flex-wrap: nowrap; /*nowrap | wrap | wrap-reverse*/
+}
+
+/*Propiedad justify-content*/
+.contenedor2{
+    display: flex; 
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: flex-start;/*flex-start | flex-end | center | space-between | space-around | space-evenly*/
+}
+
+/*Propiedad align-content*/
+.contenedor3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 300px;
+    align-content: flex-start; /*flex-start | flex-end | center | space-between | space-around | stretch */
+}

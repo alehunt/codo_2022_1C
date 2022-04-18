@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3</title>
+</head>
+<body>
+    <h1>Codo a codo</h1>
+    <a href="clases.html">Ver clases</a>
+
+    <h3>Formulario</h3>
+    <form action="https://formspree.io/f/xbjwkkna"method="POST">
+        
+    <label>
+      Ingrese su email:
+      <input type="email" required name="correo" placeholder="TU EMAIL">
+    </label>
+
+    <input type="text" name="dato" value="datooculto" readonly>
+    <label for="chkMeAburri">Me aburri</label>
+    <input id="chkMeAburri" name="chkMeAburri"  type="checkbox" value="XX" >
+    <label for="txtNombre">Nombre:</label>
+    <input type="password" required maxlength="5" name="txtNombre" id="txtNombre">
+    <label for="opinion">Opinion</label>
+    <select name="opinion" multiple id="opinion">
+            <option value="pepe">Malo</option>
+            <option value="juan">Medio</option>
+            <option value="ale">Bueno</option>
+    </select>
+    <label>
+      Ingrese sus comentarios:
+      <textarea name="mensaje" required></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+span{
+    background-color: red; /*color de fondo*/
+    border: 1px solid black; /*borde: ancho, tipo y color*/
+    height: 50px; /*alto*/
+    width: 200px;
+    display: inline-block; /*forma de visualizar un elemento*/
+}
+div{
+    background-color: blue;
+    border: 2px solid black;
+    height: 100px;
+    width: 30%; /*ancho*/
+    display: block; /*Valor por defecto*/
+}

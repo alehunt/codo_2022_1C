@@ -1,0 +1,26 @@
+/*------------- TRANSICIONES -------------*/
+/*Truco: Si nos fijamos bien, este estilo se aplica sólo al
+ mover el ratón sobre el enlace (transición de entrada).
+ Sin embargo, si movemos el ratón fuera del enlace, no se
+ produce transición sino que realiza el cambio de forma
+ brusca. Si movemos las propiedades de transición al primer
+ bloque (a {}), se aplicarán tanto en las transiciones
+ de entrada como en las de salida.*/
+
+a {
+    background: #DDD;
+    color: #222;
+    padding: 2px;
+    border: 1px solid #AAA;
+}
+
+a:hover {
+    background: #FFF;
+    color: #666;
+    padding: 8px 14px;
+    border: 1px solid #888;
+
+    transition-property: all; /*a todas las propiedades nombradas*/
+    transition-duration: 0.5s; /*con una duración de 0.5s*/
+    transition-timing-function: ease-in; /*inicio lento, luego normal*/
+}

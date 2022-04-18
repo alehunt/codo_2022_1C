@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Grid</title>
+    <style>
+        .box {
+            background: slateblue;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .contenedor {
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: 50% 30% 20%; */
+
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: 1fr 3fr 1fr; */
+            /* grid-template-columns: 3fr 6fr 3fr; */
+
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 2fr 1fr 3fr;
+            grid-auto-rows: 3fr; /* Las que se agreguen van a tener 3fr */
+
+            column-gap: 10px;
+            row-gap: 20px;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">+</div>
+        <div class="box">+</div>
+        <div class="box">+</div>
+        <div class="box">+</div>
+        <div class="box">+</div>
+        <div class="box">+</div>
+        <div class="box">+</div>
+        <div class="box">+</div>
+    </div>
+</body>
+</html>

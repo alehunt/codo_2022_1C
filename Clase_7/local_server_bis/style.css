@@ -1,0 +1,85 @@
+* {
+    color: black;
+    box-sizing: border-box;
+}
+
+footer, p {
+    color: blueviolet;
+}
+
+
+p {
+    color: aqua;
+}
+
+footer p {
+    color: blue;
+}
+
+footer > p {
+    color: brown;
+}
+
+div ~ p {
+    color: chartreuse;
+}
+
+header {
+    top: 5px;
+    position: sticky;
+}
+
+li {
+    display: inline-block;
+}
+
+.contenedor {
+    width: 150px;
+    height: 150px;
+    border: 4px solid burlywood;
+    margin: 4px;
+    padding: 4px 4px 4px 4px;
+    position: relative;
+}
+
+.relativo {
+    width: 60px;
+    height: 60px;
+    border: 4px solid coral;
+    top: 20px;
+    left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.absolute {
+    width: 60px;
+    height: 60px;
+    border: 4px solid cornflowerblue;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+.fijo {
+    width: 60px;
+    height: 60px;
+    border: 4px solid cornflowerblue;
+    top: 20px;
+    left: 20px;
+    /* position: fixed; */
+}
+
+.pegajoso {
+    width: 60px;
+    height: 60px;
+    border: 4px solid cornflowerblue;
+    top: 20px;
+    left: 20px;
+    position: sticky;
+    z-index: -1;
+}
+
+
+

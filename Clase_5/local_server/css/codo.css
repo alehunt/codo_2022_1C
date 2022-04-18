@@ -1,0 +1,43 @@
+/* * {
+    margin: 0;
+} */
+
+p {
+    color: blue; 
+}
+
+h1 {
+    color:rgb(red, green, blue);
+    font-weight: 700;
+    
+}
+
+p {
+    color: green;
+}
+
+.parrafomedio {
+    color: crimson;
+}
+
+#parrafoabajo {
+    color: coral;
+    margin-top: 50px;
+}
+
+#abajo {
+    color: darkkhaki;
+}
+
+#miDiv {
+    background-color: darkgreen;
+    border-style: dotted;
+    border: 2px;
+    border-color: aqua;
+    border-width: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+
+

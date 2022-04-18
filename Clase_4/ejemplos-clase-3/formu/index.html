@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="DNI">DNI:</label>
+            <input type="number" name="DNI">
+            <label for="tramite">Nro Tramite: </label>
+            <input type="password" name="tramite">
+            <label for="fecnac">Fecha de nacimiento: </label>
+            <input type="date" name="fecnac">
+            <br><br>
+            <label for="correo">E-Mail:</label>
+            <input type="email" name="correo">
+            <label for="adjunto">Adjuntar foto:</label>
+            <input type="file" name="adjunto">
+            <br><br>
+        </fieldset>
+        <label for="comentarios">Ingrese su consulta: </label><br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escribe tu consulta..."></textarea>
+        <br><br>
+        <label for="turno">Seleccionar turno: </label>        
+        <select name="turno" id="turno" size="4">
+            <option value="1">Mañana</option>
+            <option value="2">Tarde</option>
+            <option value="3">Vespertino</option>
+            <option value="4">Noche</option>
+        </select>
+        <br><br>
+
+        <label for="op">Conocimientos previos:</label>
+        <input type="checkbox" name="op" value="1"> HTML
+        <input type="checkbox" name="op" value="2"> CSS
+        <input type="checkbox" name="op" value="3"> JS
+        <br><br>
+        <label for="rb">Zona de residencia:</label>
+        <input type="radio" name="rb"  value="1"> CABA
+        <input type="radio" name="rb"  value="2"> Gran Bs.As.
+        <input type="radio" name="rb"  value="3"> Prov. Bs. As.
+        <br></br>
+        <label for="color_control">Color favorito:</label>
+        <input type="color" name="color_control">
+        <br><br>
+        <label for="hijos">Cantidad de hijos:</label>
+        <input type="number" name="hijos" min="1" max="10">
+        <br><br>
+        <input type="checkbox" name="condic"> Acepto los términos y condiciones
+        <br><br>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

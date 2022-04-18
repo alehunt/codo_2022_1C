@@ -1,0 +1,37 @@
+/*Hacemos que 1rem sea equivalente a 10px*/
+html{
+	font-size:62,5%;
+}
+
+#contenedor{	
+  background: #CCC;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;/*<flex-direction> <flex-wrap>*/
+  justify-content: space-around;
+}
+
+.item {  
+  font-size:3rem;
+  width: 20%;
+  height: 10rem;
+}
+
+.item-1{
+	background: red;
+}
+
+.item-2{
+	background: yellow;	
+}
+
+.item-3{
+	background: green;
+}
+
+.item-4{
+	background: blue;
+}
+
+
+	

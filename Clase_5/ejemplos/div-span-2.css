@@ -1,0 +1,12 @@
+div{
+    background-color: aquamarine;
+    border: 1px solid;
+    /*Si habilitamos display: inline se comporta como elemento en línea */
+    /*display: inline; */
+}
+span{
+    background-color: chocolate;
+    border: 1px solid;
+    /*Si habilitamos display: block se comporta como elemento en bloque*/
+    /*display: block;*/
+}

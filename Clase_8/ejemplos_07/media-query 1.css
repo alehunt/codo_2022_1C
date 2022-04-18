@@ -1,0 +1,26 @@
+body{
+    background-color: lightgreen;
+    font-family: Verdana;
+}
+
+/*screen: monitores o pantallas de computadora*/
+@media only screen and (max-width: 600px){
+    /*Condición: Ancho máximo 600px, hasta 600px le aplicamos este estilo*/
+    body{
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /*Condición: Ancho máximo 400px, hasta 400px le aplicamos este estilo*/
+    body{
+        background-color: lightsalmon;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    /*Condición: Ancho mínimo 800px, desde 800px le aplicamos este estilo*/
+    body{
+        background-color: lightseagreen;
+    }
+}

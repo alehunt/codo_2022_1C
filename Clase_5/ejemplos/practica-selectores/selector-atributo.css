@@ -1,0 +1,36 @@
+a {
+  color: black;
+}
+
+/* Links internos que comienzan con "#" */
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* Links con "ejemplo" en la URL */
+a[href*="ejemplo"] {
+  background-color: silver;
+}
+
+/* link con la palabra "sinmayusculas"en la URL,
+   sin chequear mayúsculas */
+a[href*="insensitive" i] {
+  color: blue;
+}
+
+/* link con la palabra "ConMAyusculas"en la URL,
+   con chequeo de mayúsculas  */ 
+a[href*="ConMAyusculas"] { 
+  color: orange; 
+}
+
+/* Links que terminen en ".org" */
+a[href$=".org"] {
+  color: red;
+}
+
+/* Links que comienzan con "https" y terminan en ".org" */
+a[href^="https"][href$=".org"] {
+  color: green;
+}
+  

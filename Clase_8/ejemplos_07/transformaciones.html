@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones</title>
+    <style>
+        *{font-family: Verdana;}
+        
+        h1{
+            color: blue;
+            background-color:lightblue;
+        }
+        h2{
+            color: teal;
+            background-color:lightgreen;
+        }
+        .caja{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            background-color: tomato;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transformaciones CSS</h1>
+    <p>Elemento original:</p>
+    <div class="caja">Caja</div>
+    <h2>Translaciones (translate)</h2>
+    <div class="caja" style="transform: translate(50px, 20px);">Caja</div>
+    
+    <h2>Escalado (scale)</h2>
+    <br><br>
+    <div class="caja" style="transform: scale(1.4, 1.4);">Caja</div>
+
+    <h2>Rotaciones (rotate)</h2>
+    <div class="caja" style="transform: rotateX(45deg);">Caja</div>
+    <div class="caja" style="transform: rotateY(45deg);">Caja</div>
+    <div class="caja" style="transform: rotate(45deg);">Caja</div>
+
+    <h2>Deformaciones (skew)</h2>
+    <div class="caja" style="transform: skewX(30deg);">Caja</div>
+    <div class="caja" style="transform: skewY(30deg);">Caja</div>
+</body>
+
+</html>

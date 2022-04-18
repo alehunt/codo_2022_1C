@@ -1,0 +1,46 @@
+.padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Propiedades Flexbox pero de los elementos hijos:
+Estás propiedades las aplicaremos a los div que se encuentran dentro del contenedor padre.
+order:; Ordena los elementos hijos según el número que tu le designes.
+flex-grow:; Especifica el factor de crecimiento de un elemento flexible. Se especifica qué cantidad de espacio debe ocupar el elemento dentro del contenedor flexible. Si todos los elementos tienen flex-grow 1, el espacio restante se distribuye entre los elementos.
+flex-shrink:; Si utilizamos esta propiedad con valor «0» el elemento hijo no podrá hacerse más pequeño que su ancho establecido.
+flex-basis:; Con esta propiedad podemos especificar el tamaño inicial que tendrá un elemento hijo.
+flex:1 1 auto; Es la propiedad resumida de flex-grow, flex-shrink y flex-basis, generalmente se utiliza con la unidad «1 1 auto».
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
+Con aling-self podemos posicionar solo un elemento hijo, generando así diferentes posiciones para cada elemento.
+*/
+.header, .articulo, .izquierda, .derecha, .footer{
+    flex-grow: 1;
+    flex-basis: 100%; 
+    padding: 10px;
+}
+
+/* media queries */
+/* tamaño tablet */
+@media all and (min-width: 600px){
+    .aside {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+        flex: 1 1 auto;
+    }
+}
+/* tamaño pc */
+@media all and (min-width: 800px){
+    .articulo{flex:2 0;}
+    .izquierda{order: 1;}
+    .articulo{order: 2;}
+    .derecha{order: 3;}
+    .footer{order: 4;}
+}
+   
+.header{background: #581845;}
+.articulo{background: #FFC300}
+.izquierda{background: #900C3F}
+.derecha{background: #C70039}
+.footer{background: #DAF7A6}

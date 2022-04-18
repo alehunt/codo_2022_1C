@@ -1,0 +1,18 @@
+.box {
+    background: slateblue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.contenedor {
+    height: 500px;
+    background: cornflowerblue;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    /* grid-template-rows: 100px 100px; */
+    /* https://www.w3schools.com/css/css_grid_container.asp */
+    align-content:center;
+}

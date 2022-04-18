@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-flow: row wrap; */
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 500px;
+            border: 1px dashed #666;
+        }
+        
+        .flex-container>div {
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+            border-radius: 3px;
+            background-color: #1faadb;
+        }
+        
+        .div-especial {
+            flex-grow: 5;
+            order: -1;
+        }
+        
+        .div-especial-otro {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="flex-container">
+        <div class="div-especial-otro">1</div>
+        <div class="div-especial">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+* {
+    color: blueviolet;
+}
+
+
+p, h1, div {
+    color: red;
+}
+
+div {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+footer p {
+    color: green;
+}
+
+footer > p {
+    color: aqua;
+}
+
+/* div ~ p {
+    color: orange;
+} */
+
+.contenedor {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border: 10px solid yellowgreen;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.relativa {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid burlywood;
+    top:  30px;
+    left: 30px;  
+    position: relative;
+    overflow: hidden;
+} 
+
+.absoluto {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid burlywood;
+    top:  30px;
+    left: 30px;  
+    position: absolute; 
+} 
+
+.fixed {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid burlywood;
+    top:  30px;
+    left: 30px;  
+    /* position: fixed;  */
+    position: relative;
+} 
+
+
+.sticky {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid burlywood;
+    top:  20px;
+    position: sticky; 
+} 
+
+
+header {
+    position: sticky;
+    top: 10px
+}
+
+

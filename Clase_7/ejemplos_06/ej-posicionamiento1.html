@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ej-posicionamiento1.css">
+        <title>Posicionamiento (ej clase)</title>
+        <!--Ejemplo de la clase, comentado y explicado por mí-->
+    </head>
+    <body>
+        <h1>Propiedades del posicionamiento</h1>
+        <!--Viene por defecto cuando trabajamos con HTML-->
+        <h2>position: static;</h2> 
+        <p>El elemento "Parent1" tiene una posición <b> static</b>, y permanecerá en el flujo natural de la página.<br>No actuará como punto de anclaje para el elemento <b>Child1</b> absolutamente posicionado.
+        </p>
+        <div id="parent1">
+            <b>Parent1:</b> position: static.<br>
+            Contenedor <b>Padre1</b>
+            <!--Contenido por el div padre-->
+            <div id="child1"> <b>Child1:</b> position: absolute, right: 15px, top: 70px <br><br>
+            Dentro del contenedor <b>Padre1</b> tiene una <br> posición absoluta respecto del <i>body</i>, en este caso <br> a 70 px desde el borde superior (top) <br> y a 15 px desde la derecha (right)
+            </div>
+            <!--Esta posición absoluta ignora la posición de su contenedor-->
+        </div>
+        
+        <h2>position: relative;</h2>
+        <!--Es en relación a "algo"-->
+        <p> El elemento "Parent2" tiene una posición <b>relative</b>, y permanecerá en el flujo natural de la página.<br>
+        ¿Relativo a quién?. En este caso relativo al <b>p</b> que está en la línea anterior <br>
+        También actuará como punto de anclaje para el elemento Child2 absolutamente posicionado.
+        </p>
+        <div id="parent2">
+            <b>Parent2:</b> position: relative. top: 10px; left: 50px; <br>
+            Contenedor <b>Padre2</b>
+            <div id="child2"><b>Child2:</b> position: absolute, right: 30px, top: 40px<br>
+                Dentro del contenedor <b>Padre2</b> tiene una posición absoluta respecto del Padre2, en este caso a 65 px desde <b>su</b> borde superior (top) y a 30 px desde <b>su</b> izquierda (left)
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <h2>position: absolute;</h2>
+        <p>El elemento "Parent3" tiene una posición <b>absoluta</b> y NO permanecerá en el flujo natural de la página.<br>
+        Se posicionará de acuerdo con el antepasado posicionado más cercano. <br>
+        También actuará como punto de anclaje para el elemento Child3 absolutamente posicionado.
+        </p>
+        <div id="parent3">
+            <b>Parent3:</b> position: absolute, top: 650px, right: 30px.<br>
+            Contenedor <b>Padre3</b>
+            <div id="child3"><b>Child3:</b> position: absolute, right: 15px, top: 60px<br>
+                Dentro del contenedor <b>Padre3</b> tiene una posición absoluta respecto del Padre3, en este caso a 60 px desde <b>su</b> borde superior (top) y a 15 px desde <b>su</b> derecha (right)
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <h2>position: fixed;</h2>
+        <p>El elemento "Parent4" tiene una posición <b>fixed</b> y NO permanecerá en el flujo natural de la página.<br>
+        Se posicionará de acuerdo con la ventana gráfica (viewport).<br>
+        También actuará como punto de anclaje para el elemento Child4 absolutamente posicionado.<br>
+        La referencia es la parte visual del navegador.<br><br><br>
+        </p>
+        <div id="parent4">
+            <b>Parent4:</b> position: fixed, bottom: 0, left: 0, right: 0. <br>
+            Contenedor <b>Padre4</b>
+            <div id="child4"><b>Child4:</b> position: absolute, right: 15px, top: 55px. 
+                Posición absoluta respecto del Padre4.
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </body>
+</html>

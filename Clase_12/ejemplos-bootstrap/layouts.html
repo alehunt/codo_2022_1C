@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Layouts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1>Diferentes layouts para dispositivos</h1>
+    <h2>Ejemplo 1: dos columnas en container. </h2>
+    <div class="container">
+        <div class="row">
+            <p>col-sm-6: ¿Cómo se lee esto?: Decimos que "desde small (576px)" dividime en 2 columnas de 6 y 6</p>
+            <div class="col-sm-6 bg-success">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sit temporibus dolores corrupti odit eligendi voluptatem explicabo soluta assumenda perspiciatis modi maiores quos tempore tempora totam facilis? Rerum, nesciunt animi.</p>
+            </div>
+            <div class="col-sm-6 bg-warning">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sit temporibus dolores corrupti odit eligendi voluptatem explicabo soluta assumenda perspiciatis modi maiores quos tempore tempora totam facilis? Rerum, nesciunt animi.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h2>Ejemplo 2: dos columnas iguales en container-fluid. </h2>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 bg-success">
+                <p>FONDO VERDE</p>
+            </div>
+            <div class="col-sm-6 bg-warning">
+                <p>FONDO AMARILLO</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h2>Ejemplo 3: dos columnas diferentes en container-fluid. </h2>
+    <p>Las columnas se adaptan al ancho del viewport en tamaños <b>sm</b> y <b>lg</b></p>
+    <div class="container-fluid">
+        <p> Este ejemplo demuestra las siguientes divisiones: <br>
+            - Una división de 6 a 6 (50 %) en dispositivos extra pequeños (hasta 576 px) <br>
+            - Una división de 8 a 4 (67 % y 33 %) en dispositivos sm (small, desde 576 px en adelante) <br>
+            - Una división de 10 a 2 (84 % y 16 %) en dipositivos lg (large, desde 992 px en adelante)
+        </p>
+        <div class="row">
+            <div class="col-6 col-sm-8 col-lg-10 bg-primary">
+                <p>col-6 col-sm-8 col-lg-10</p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 bg-warning">
+                <p>col-6 col-sm-4 col-lg-2</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

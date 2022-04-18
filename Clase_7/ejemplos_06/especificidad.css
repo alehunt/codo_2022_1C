@@ -1,0 +1,12 @@
+p { 
+    color:red!important; /* va a sobreescribir a todos */
+}
+#primer-parrafo {
+    color:blue; /* va a sobreescribir solo a las clases */
+}                 /* pseudoclases y etiquetas */
+.parrafo {      
+    color:green; /* va a sobreescribir solo a las etiquetas */
+}                  /* y pseudoelementos */
+p {
+    color:orange;
+} 

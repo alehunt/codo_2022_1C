@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="selectores_1.css">
+    <title>Selectores</title>
+</head>
+
+<body>
+    <h1>Selectores</h1>
+    <h2>Selector universal</h2>
+    <p>Afecta a todo el documento HTML</p>
+    
+    <h2>Selector de etiqueta o tipo</h2>
+    <p>Afecta a una etiqueta específica, por ejemplo h1 o p </p>
+
+    <h2>Selectores de clase / Selectores de id</h2>
+    <p>Permiten darle a una serie de componentes un estilo en particular.</p>
+
+    <h3 class="subtitulos">Selectores de clase</h3>
+    <h3 class="subtitulos">Selectores de id</h3>
+    <div id="texto">
+        Selector de id aplicado a una etiqueta div
+    </div>
+    <h2>Jerarquía de selectores</h2>
+    <p>Pueden existir conflictos entre estilos, que tienen que ver con la <b>jerarquía de estilos</b> (lo veremos más adelante). Por ejemplo:</p>  
+    <div id="texto">
+        <p>Otro párrafo (selector de ID)</p>
+        <h2>Otro título con H2 dentro del div</h2>
+    </div>
+    <br>
+    <!-- CSS en línea -->
+    <p style="color: white; background-color: gray;">Ejemplo CSS: estilo en línea.</p>
+
+
+</body>
+
+</html>

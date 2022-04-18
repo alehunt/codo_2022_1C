@@ -1,0 +1,36 @@
+div + p {
+    color: aqua;
+}
+
+div#idparticular p:first-child {
+    color: rgb(167, 100, 230);
+}
+
+a:link {
+    color: aqua;
+}
+
+a:hover {
+    background-color: chartreuse;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active {
+    background-color: gold;
+    color: darkgreen;
+}
+
+p::first-letter {
+    color: deepskyblue;
+}
+
+.primerletra {
+    color: chocolate;
+}
+
+.titulo h1:nth-child(3) {
+  color: blueviolet;   
+}

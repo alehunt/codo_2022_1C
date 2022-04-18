@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer {
+    /* border: 3px red solid; */
+    min-height: 50px;
+    margin: 0.5rem;
+    min-width: 400px;
+}
+
+body {
+    min-width: 560px;
+    background-color: #f2f2f2;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: normal;
+    /* background-color: grey; */
+}
+
+main {
+    min-height: 200px;
+    overflow: auto;
+    background-color: white;
+    /* margin-top: 0; */
+    /* z-index: 0; */
+}
+
+footer {
+    background-color: white;
+    
+}
+
+footer p {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+header {
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    background: #fff;
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+    /* margin-bottom: 0.5rem; */
+    /* agregar luego para mostrar como queda fijo el menú */
+    /* 
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0; */
+}
+
+/* https://francescricart.com/ejemplo-de-creacion-de-menu-horizontal-en-css-inline-block-y-float/ */
+.header-menubar ul {
+    list-style: none;
+}
+
+.header-menubar li {
+    /* display: inline-block; */
+    float: left;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-menubar li:hover {
+    /* background-color: gray; */
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-menubar a:hover {
+    /* color: purple; */
+    color: #F6DB44;
+}
+
+.header-menubar li a {
+    padding: .5rem;
+    line-height: 16px;
+    /* font-size: .8125rem; */
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.header-logo {
+    /* border: 2px blue solid; */
+    /* height: 1.375rem; */
+    /* width: 7.75rem; */
+
+    /* min-width: 100px; */
+    /* width: auto; */
+    height: auto; 
+    display: inline-block;
+    margin: 1rem;
+    /* overflow: auto; */
+}
+
+
+
+.header-menubar {
+    /* border: 2px blue solid; */
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    min-width: 50%;
+    min-height: 1.375rem;
+    display: inline-block;
+    margin: 0.5rem 0 0.5rem 1rem;
+    /* margin: 0 0 0 1rem; */
+}
+
+/* .contenido-ppal { */
+main>div {
+    /* border: 2px blue solid; */
+    min-height: 180px;
+    max-width:65%;
+    margin: 0.5rem;
+    /* https://www.w3schools.com/cssref/pr_class_float.asp */
+    /* float: none|left|right|initial|inherit; */
+    /* The element floats to the left of its container */
+    float: left;
+    height: auto;
+    overflow: hidden;
+}
+
+/* .contenido-sec { */
+main>aside {
+    /* border: 2px blue solid; */
+    min-height: 180px;
+    min-width: 25%;
+    margin: 0.5rem;
+    float: left;
+
+}
+
+.secciones {
+    /* border: 2px green solid; */
+    min-height: 50px;
+    margin: 0.5rem;
+}
+
+.secciones article {
+    /* border: 2px purple solid; */
+    margin: 0.5rem;
+}
+
+/* https://nestordominguez.com/ajustar-imagen-al-tamano-del-contenedor/ */
+#gif-ppal {
+    width: 100%;
+}

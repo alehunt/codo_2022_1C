@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemploz-index</title>
+    <style>
+        img{
+            position:absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1; /*Valores negativos: más hacia el fondo
+                           Valores positivos: más hacia el frente*/
+        }
+        body{
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-Index</h1>
+    <img src="logo-css3.png" alt="Logo">
+    <p style="background-color: cadetblue; position: absolute; z-index: -2;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo error vel quas culpa.</p>
+</body>
+</html>

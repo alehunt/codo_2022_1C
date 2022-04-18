@@ -1,0 +1,14 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: cambiarColor;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    /* animation: cambiarColor 2s 1s; */
+}
+
+@keyframes cambiarColor {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}

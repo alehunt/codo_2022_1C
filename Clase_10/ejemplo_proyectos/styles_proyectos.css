@@ -1,0 +1,44 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+body{
+    background: linear-gradient(60deg , blue ,white);
+}
+
+.grid-container{
+    display: grid;
+    /*Si no tiene un espacio de 360px se va para abajo.*/
+    grid-template-columns: repeat(auto-fit , minmax(360px, 1fr));
+
+    /*Para que la imagen se separe un poco*/
+    grid-gap: 1rem;
+}
+
+img{
+    width: 100%; /*Para que la imagen se ajuste al container*/
+    border-radius: 1rem;
+}
+
+.grid-item{
+    /*Un fondo medio transparente*/
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+
+    /*Para modificar la imagen de adentro transformo el item en un container*/
+    display: grid;
+    /*le doy 150px a la imagen y 1fr al texto*/
+    grid-template-columns: 150px 1fr;
+    padding: 1rem;
+
+    /*Si quiero separar el texto de las imagenes.*/
+    grid-gap: 0.5rem;
+}

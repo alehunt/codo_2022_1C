@@ -1,0 +1,22 @@
+.contenedor {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* Ver líneas de rejilla */
+}
+
+.box {
+    background: slateblue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.box.box1 {
+    grid-column: 1 / 3; /*Desde la línea 1 hasta la 3 inclusive en ancho*/
+    grid-row: 1 / 4; /*Desde la línea 1 hasta la 4 inclusive en alto*/
+    /* grid-row: 2 / 4; */
+    /* grid-row: 1 / span 3; */ /* Desde la fila 1, ocupa 3 filas */
+    /* Más ejemplos en: https://www.w3schools.com/css/css_grid_item.asp */
+}

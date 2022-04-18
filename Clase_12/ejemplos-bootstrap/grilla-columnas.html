@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Columnas con Bootstrap</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>Columnas con Bootstrap - Grid</h1>
+        <p>Modificar el tamaño de la ventana para ver el efecto :)</p>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Columna 1</h3>
+            <p>Texto de la columna 1 (esta abarca 4 de las 12 columnas totales)...</p>
+            <p>Más texto de la misma columna</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet magnam placeat, minus repellendus fuga temporibus officia totam modi ex dignissimos blanditiis quasi laboriosam dolorum optio dicta maxime excepturi! Atque perferendis dignissimos porro tempora dolore repudiandae veniam eum, consequatur, debitis laborum molestiae. Illo laboriosam ducimus harum inventore, totam error asperiores?</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>Columna 2</h3>
+            <p>Texto de la columna 2 (esta abarca 4 de las 12 columnas totales)...</p>
+            <p>Más texto de la misma columna</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet magnam placeat, minus repellendus fuga temporibus officia totam modi ex dignissimos blanditiis quasi laboriosam dolorum optio dicta maxime excepturi! Atque perferendis dignissimos porro tempora dolore repudiandae veniam eum, consequatur, debitis laborum molestiae. Illo laboriosam ducimus harum inventore, totam error asperiores?</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>Columna 3</h3>
+            <p>Texto de la columna 3 (esta abarca 4 de las 12 columnas totales)...</p>
+            <p>Más texto de la misma columna</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eveniet magnam placeat, minus repellendus fuga temporibus officia totam modi ex dignissimos blanditiis quasi laboriosam dolorum optio dicta maxime excepturi! Atque perferendis dignissimos porro tempora dolore repudiandae veniam eum, consequatur, debitis laborum molestiae. Illo laboriosam ducimus harum inventore, totam error asperiores?</p>
+        </div>
+    </div>
+    <h5>No se olviden que el total de las columnas son 12, pueden agruparlas como quieran: dos de 6 usando <b>col-sm-6</b> en cada div, una de 12 para ocupar todo el ancho, 3 de 4, o incluso 12 columnas de 1</h5>
+    <hr>
+    <h2>División en columnas regulares</h2>
+    <div class="row">
+        <div class="col-sm-12 border border-primary">
+            <p>Texto que abarca las 12 columnas</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 border border-secondary">
+            <p>Texto que abarca 6 columnas (izquierda)</p>
+        </div>
+        <div class="col-sm-6 border border-secondary">
+            <p>Texto que abarca 6 columnas (derecha)</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4 border border-primary">
+            <p>Texto que abarca 4 columnas (izquierda)</p>
+        </div>
+        <div class="col-sm-4 border border-primary">
+            <p>Texto que abarca 4 columnas (central)</p>
+        </div>
+        <div class="col-sm-4 border border-primary">
+            <p>Texto que abarca 4 columnas (derecha)</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-3 border border-secondary">
+            <p>Texto que abarca 3 columnas (izquierda)</p>
+        </div>
+        <div class="col-sm-3 border border-secondary">
+            <p>Texto que abarca 3 columnas (central)</p>
+        </div>
+        <div class="col-sm-3 border border-secondary">
+            <p>Texto que abarca 3 columnas (central)</p>
+        </div>
+        <div class="col-sm-3 border border-secondary">
+            <p>Texto que abarca 3 columnas (derecha)</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-2 border border-primary">
+            <p>Texto que abarca 2 columnas</p>
+        </div>
+        <div class="col-sm-2 border border-primary">
+            <p>Texto que abarca 2 columnas</p>
+        </div>
+        <div class="col-sm-2 border border-primary">
+            <p>Texto que abarca 2 columnas</p>
+        </div>
+        <div class="col-sm-2 border border-primary">
+            <p>Texto que abarca 2 columnas</p>
+        </div>
+        <div class="col-sm-2 border border-primary">
+            <p>Texto que abarca 2 columnas</p>
+        </div>
+        <div class="col-sm-2 border border-primary">
+            <p>Texto que abarca 2 columnas</p>
+        </div>
+    </div>
+    <hr><br>
+    <h2>División en columnas irregulares</h2>
+    <div class="row">
+        <div class="col-sm-1 border border-primary"> 
+            <p>1 columna</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 border border-primary"> 
+            <p>2 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 border border-primary"> 
+            <p>3 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 border border-primary"> 
+            <p>4 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5 border border-primary"> 
+            <p>5 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 border border-primary"> 
+            <p>6 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-7 border border-primary"> 
+            <p>7 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 border border-primary"> 
+            <p>8 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-9 border border-primary"> 
+            <p>9 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 border border-primary"> 
+            <p>10 columnas</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-11 border border-primary"> 
+            <p>11 columnas</p>
+        </div>
+    </div>
+</body>
+</html>

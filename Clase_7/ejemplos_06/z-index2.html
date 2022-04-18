@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Z-index</title>
+    <style>
+        .img {
+            border: 1px solid red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 20;
+        }
+        .img1 {
+            border: 2px solid blue;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            z-index: 10;
+        }
+        .img2 {
+            border: 3px solid violet;
+            position: absolute;
+            left: 60px;
+            top: 60px;
+            z-index: -1;
+        }
+        body{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The z-index Property</h1>
+
+    <img class="img" src="https://www.w3schools.com/tags/w3html.gif" width="100" height="140">
+    <img class="img1" src="https://www.w3schools.com/tags/w3html.gif" width="100" height="140">
+    <img class="img2" src="https://www.w3schools.com/tags/w3html.gif" width="100" height="140">
+
+    <p>Because the image has a z-index of -1, it will be placed behind the heading.</p>
+
+</body>
+
+</html>

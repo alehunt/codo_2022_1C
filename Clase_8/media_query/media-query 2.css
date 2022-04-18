@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;/*el relleno y el borde se incluyen en el ancho y el alto*/
+}
+
+.row::after {
+    content: ""; /*Sin contenido: https://www.w3schools.com/cssref/pr_gen_content.asp*/
+    clear: both; /*El elemento se empuja debajo de los elementos flotantes izquierdo y derecho.*/
+    display: block; /*Se muestra en bloque*/
+}
+
+[class*="col-"] { /*Clases que contengan el nombre col-*/
+    float:left; /*https://www.w3schools.com/cssref/pr_class_float.asp*/
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif; /*Tipo de fuente*/
+}
+
+.header {
+    background-color: #0E216A; /*Color de fondo*/
+    color: #ffffff; /*Color de fuente*/
+    padding: 15px; /*Margen interno*/
+}
+
+.menu ul {
+    list-style-type:none; /*Estilo de lista*/
+    margin: 0; /*Margen externo*/
+    padding: 0; /*Margen interno*/;
+}
+
+.menu li {
+    padding: 8px; /*Margen interno*/
+    margin-bottom: 7px; /*Margen externo inferior*/
+    background-color: #277CE1; /*Color de fondo*/
+    color: #ffffff; /*Color de fuente*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /*Sombra*/
+}
+
+.menu li:hover {
+    background-color: #134B8E; /*Color de fondo*/
+}
+
+.aside {
+    background-color: #277CE1; /*Color de fondo*/
+    padding: 15px; /*Margen interno*/
+    color: #ffffff; /*Color de fuente*/
+    text-align: center; /*Alineación de texto*/
+    font-size: 16px; /*Tamaño de fuente*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.footer {
+    background-color: #0E216A; /*Color de fondo*/
+    color: #ffffff; /*Color de fuente*/
+    text-align: center; /*Alineación de texto*/
+    font-size: 14px; /*Tamaño de fuente*/
+    padding: 15px; /*Margen interno*/
+}
+
+/* For desktop: 
+Distintos tamaños relativos al viewport, no se utilizan todos en el ejemplo,
+sino que se utilizan aquellos que sean funcionales a este proyecto*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: 
+    Hasta 768 px se va a comportar de esta forma: 
+    Todas las clases que tengan la palabra col- en su nombre
+    van a tener un ancho del 100%, ocupando todo el viewport*/
+    [class*="col-"] {
+        width: 100%;
+    }
+}

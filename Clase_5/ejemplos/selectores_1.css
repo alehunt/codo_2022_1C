@@ -1,0 +1,43 @@
+/* Hoja de estilos externa */
+/* Regla de estilo: selector, propiedad, valor. Ejemplo: h1 { color: orange; }  */
+
+/* Selectores universal */
+/* El selector universal puede ser muy útil en algunos casos para resetear ciertas propiedades
+   de todo un documento */
+* {
+    margin: 10px; /*margin establece el margen para los cuatro lados*/
+    padding: 5px; /*padding establece el espacio de relleno*/
+    background-color:lightgreen; /*cambia el color de relleno*/
+    font-family: Verdana; /*cambia el tipo de letra*/
+}
+
+/* Selectores de tipo o etiqueta */
+h1 {
+    color: lightblue;
+    background-color: blue;
+}
+h2 {
+    color: blue;
+    background-color: lightblue;
+}
+p {
+    color:black;
+    font-style: italic;
+    font-size: 130%;
+}
+
+/* Selectores de clase */
+.subtitulos {
+    margin-left: 50px;
+    color: yellowgreen;
+    background-color:olivedrab;
+}
+
+/* Selectores de ID */
+#texto {
+    color: white;
+    background-color: violet;
+    text-align: center;
+    margin-left: 100px;
+}
+

@@ -1,0 +1,16 @@
+.contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-wrap: nowrap; */ /* valor por defecto, todos los ítems en un sola línea. */
+    flex-wrap: wrap;
+    background-color: blue;
+}
+
+.contenedor > div {
+    background-color: red;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

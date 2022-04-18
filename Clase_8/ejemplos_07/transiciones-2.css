@@ -1,0 +1,39 @@
+div {
+    width: 100px; /*Ancho inicial*/
+    height: 100px;
+    background: red;
+    /*
+    transition-property: width;
+    transition-duration: 3s;
+    */    
+    /* Atajo: Transiciones */
+    transition: width 3s; 
+}
+
+div:hover {
+    width: 300px; /*Ancho al que quiero llegar*/
+}
+
+/*********************************************/
+
+a {
+    background: rgb(71, 112, 74);
+    color: blue;
+    padding: 2px;
+    border: 1px solid #AAA;
+}
+
+a:hover {
+    background: #c3fabc;
+    color: green;
+    padding: 18px 24px;
+    border: 4px solid #888;
+    
+    transition-property: all; /*Especifico que quiero modificar todas las propiedades*/
+    transition-duration: 2s;
+    transition-timing-function: ease-in; /*Controla el tiempo de entrada y salida*
+                                         /*ease-in: arranca más lento
+                                           ease-out: termina más lento
+                                           ease-in-out: arranca y termina más lento*/
+}
+    
