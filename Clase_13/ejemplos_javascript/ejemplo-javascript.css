@@ -1,0 +1,12 @@
+p {
+    font-size: 30px;
+    color: red;
+    background-color: yellow;
+}
+
+#texto{
+    font-family: Arial;
+    color: blue;
+    background-color: aquamarine;
+    padding: 20px 10px;
+}

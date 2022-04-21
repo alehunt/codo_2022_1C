@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var num1;
+        var num2;
+        var i;
+        var a;
+        
+        /************** INCREMENTO POSFIJO **************/
+        console.log("************** INCREMENTO POSFIJO **************");
+        i=2;
+        console.log("Valor inicial de i:" + i);
+        console.log("Con num1 = i++ primero hago num1=i y después i=i+1");
+        num1 = i++; //primero toma el valor y después incrementa (pos -> incrementa luego) 
+        //i++ = i = i + 1
+        console.log("Incremento posfijo num1: "+ (num1)+" (vale lo mismo porque primero lo asocio)");
+        console.log("Incremento posfijo i++: "+ (i++)+" (ya tiene el incremento)");
+
+        /************** DECREMENTO POSFIJO **************/
+        console.log("");
+        console.log("************** DECREMENTO POSFIJO **************");
+        a=2;
+        console.log("Valor inicial de a:" + a);
+        console.log("Con num2 = a-- primero hago num2=a y después a=a-1");
+        num2 = a--; //primero toma el valor y después decrementa (pos -> decrementa luego)
+        console.log("Decremento posfijo num2: "+ (num2)+" (vale lo mismo porque primero lo asocio)");
+        console.log("Decremento posfijo a--: "+ (a--)+" (ya tiene el decremento)");
+
+        /************** INCREMENTO PREFIJO **************/
+        console.log("");
+        console.log("************** INCREMENTO PREFIJO **************");
+        i=2;
+        console.log("Valor inicial de i:" + i);
+        console.log("Con num1 = ++i primero hago i=i+1 y después num1=i");
+        num1 = ++i; //primero incrementa y luego toma el valor) 
+        console.log("Incremento prefijo num1: "+ (num1));
+        
+        /************** DECREMENTO PREFIJO **************/
+        console.log("");
+        console.log("************** DECREMENTO PREFIJO **************");
+        a=2;
+        console.log("Valor inicial de a:" + a);
+        console.log("Con num2 = --a primero hago a=a-1 y después num2=a");
+        num2 = --a; //primero decrementa y luego toma el valor)
+        console.log("Decremento prefijo num2: "+ (num2));        
+    </script>
+    <title>Operadores prefijo y posfijo</title>
+</head>
+<body>
+    
+</body>
+</html>

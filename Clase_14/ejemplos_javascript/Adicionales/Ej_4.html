@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej_4</title>
+    <script>
+        //Crear un programa que permita definir la estación del año
+        //de acuerdo a un día y un mes dados.
+
+        var numDia = Number(prompt("Ingrese el número de día (1 al 31)"));
+        var numMes = Number(prompt("Ingrese el número del mes (1 a 12)"));
+        var estacion = "";
+        
+        if ((numDia >= 21 && numDia <= 31 && numMes == 12) ||
+            (numDia >= 1 && numDia <= 31 && numMes == 1) ||
+            (numDia >= 1 && numDia <= 29 && numMes == 2) ||
+            (numDia >= 1 && numDia <= 20 && numMes == 3)){
+            estacion = "Verano: " + numDia +"/"+ numMes; //Verano: 21/12 al 20/03
+        }else if ((numDia >= 21 && numDia <= 31 && numMes == 3) ||
+            (numDia >= 1 && numDia <= 30 && numMes == 4) ||
+            (numDia >= 1 && numDia <= 31 && numMes == 5) ||
+            (numDia >= 1 && numDia <= 20 && numMes == 6)){
+            estacion = "Otoño: " + numDia +"/"+ numMes; //Otoño: 21/03 al 20/06
+        }else if ((numDia >= 21 && numDia <= 30 && numMes == 6) ||
+            (numDia >= 1 && numDia <= 31 && numMes == 7) ||
+            (numDia >= 1 && numDia <= 31 && numMes == 8) ||
+            (numDia >= 1 && numDia <= 20 && numMes == 9)){
+            estacion = "Invierno: " + numDia +"/"+ numMes; //Invierno: 21/06 al 20/09
+        }else if ((numDia >= 21 && numDia <= 30 && numMes == 9) ||
+            (numDia >= 1 && numDia <= 31 && numMes == 10) ||
+            (numDia >= 1 && numDia <= 30 && numMes == 11) ||
+            (numDia >= 1 && numDia <= 20 && numMes == 12)){
+            estacion = "Primavera: " + numDia +"/"+ numMes; //Primavera: 21/09 al 20/12
+        }        
+        document.write(estacion);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

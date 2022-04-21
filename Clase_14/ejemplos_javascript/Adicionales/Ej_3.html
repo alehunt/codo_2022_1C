@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej_3</title>
+    <script>
+        //Crear un programa que, según el número de día de la semana solicitado,
+        // diga “buen lunes”, “buen martes”, etc. en el <body>
+
+        var numDia = Number(prompt("Ingrese el número de día de la semana (1 a 7)"));
+        var saludo = "";
+
+        switch (numDia) {
+            case 1:
+                saludo = "Buen Lunes";
+                break;
+            case 2:
+                saludo = "Buen Martes";
+                break;
+            case 3:
+                saludo = "Buen Miércoles";
+                break;
+            case 4:
+                saludo = "Buen Jueves";
+                break;
+            case 5:
+                saludo = "Buen Viernes";
+                break;
+            case 6:
+                saludo = "Buen Sábado";
+                break;
+            case 7:
+                saludo = "Buen Domingo";
+                break;
+            default:
+            saludo = "Número de día incorrecto";
+        }
+        document.write(saludo);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

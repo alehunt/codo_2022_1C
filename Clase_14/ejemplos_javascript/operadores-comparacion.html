@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var x = 4;
+        var a = 4;
+        var y = 2;
+        var z = "2";
+        console.log("x:", x, "y:", y, "a:", a, "z:", z);
+
+        console.log("----------IGUAL A------------");
+        console.log(x==y); //false: distinto valor
+        console.log(x==a); //true
+        console.log("----------IGUAL VALOR Y TIPO------------");
+        console.log(x===y); //false: distinto valor
+        console.log(x===a); //true
+        console.log(x===z); //false: distinto tipo
+        console.log("----------NO IGUAL A------------");
+        console.log(x!=y); //true
+        console.log(x!=a); //false: porque son iguales
+        console.log(x!=z); //true
+        console.log("----------IGUAL VALOR NO TIPO------------");
+        console.log(x!==y); //true: Es estrictamente distinto
+        console.log(x!==a); //false: porque son iguales
+        console.log(x!==z); //true: Es estrictamente distinto
+        console.log("----------MAYOR QUE ------------");
+        console.log(x>y); //true
+        console.log(x>a); //false: porque son iguales
+        console.log("----------MENOR QUE ------------");
+        console.log(x<y); //false: porque y es mayor
+        console.log(y<x); //true
+        console.log("----------MAYOR O IGUAL QUE ------------");
+        console.log(x>=y); //true
+        console.log(y>=x); //false: porque x es mayor
+        console.log("----------MENOR O IGUAL QUE ------------");
+        console.log(x<=y); //false: porque y es menor
+        console.log(y<=x); //true
+    </script>
+    <title>Operadores de comparacion</title>
+</head>
+<body>
+    
+</body>
+</html>

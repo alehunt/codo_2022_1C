@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej_2</title>
+    <script>
+        //Modificar el ejercicio anterior incorporando que salude: buenos días (14 hs),
+        //buenas tardes (19 hs) o buenas noches.
+
+        var hora = Number(prompt("Ingrese que hora es:"));
+        var saludo = "";
+
+        if (hora <= 14) {
+            saludo = "Buenos días";
+        } else if (hora <= 19) {
+            saludo = "Buenas tardes";
+        } else {
+            saludo = "Buenas noches";
+        }
+        document.write(saludo);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
