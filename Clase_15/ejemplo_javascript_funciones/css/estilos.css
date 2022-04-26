@@ -1,0 +1,7 @@
+.row {
+    background-color: gainsboro;
+}
+
+.col-4 {
+    border: 1px solid black;
+}
