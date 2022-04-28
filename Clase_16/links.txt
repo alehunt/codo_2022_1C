@@ -1,0 +1,4 @@
+Clases: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+Constructor: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor
+Privados en JS: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_With_Private_Class_Features
+
