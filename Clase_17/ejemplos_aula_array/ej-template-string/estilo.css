@@ -1,0 +1,18 @@
+#idfooter {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /*padding: 20px;*/
+    height: 75px;
+    margin-top: 0; /*10px;*/
+    
+  }
+h1{
+  text-align: center;
+}
