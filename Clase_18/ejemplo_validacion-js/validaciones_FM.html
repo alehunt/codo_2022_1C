@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones con JS</title>
+    <style>
+        *{font-family: Verdana;}
+    </style>
+</head>
+
+<body>
+    <form action="" name="formulario" method="get">
+        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:">
+        <br>
+        <input type="radio" name="sexo" id="hombre" value="Hombre"> Hombre
+        <input type="radio" name="sexo" id="mujer" value="Mujer"> Mujer
+        <br>
+        <input type="checkbox" name="terminos" id="terminos"> Términos y Condiciones
+        <br>
+        <input type="submit" id="btn" name="btn" value="Enviar">
+    </form>
+    <script>
+        //Curso Básico de Javascript 22.- [Practica] Como validar un formulario sencillo
+        //Fuente: https://www.youtube.com/watch?v=VLFBHnkC-vc
+        (function(){
+            //Variables
+            var formulario = document.getElementsByName('formulario')[0],
+                elementos = formulario.elements,
+                boton = document.getElementById('btn');
+
+            var validarNombre = function(e){
+                if (formulario.nombre.value == 0){
+                    alert("Completa el campo nombre");
+                    e.preventDefault();
+                    //https://www.w3schools.com/jsref/event_preventdefault.asp
+                    //Evita que un enlace abra la URL
+                }
+            };
+
+            var validarRadio = function(e){
+                if (formulario.sexo[0].checked == true || 
+                    formulario.sexo[1].checked == true){
+                } else{
+                    alert("Completa el campo sexo");
+                    e.preventDefault();
+                }
+            };
+            
+            var validarCheckbox = function(e){
+                if (formulario.terminos.checked == false){
+                    alert("Acepta los términos y condiciones");
+                    e.preventDefault();
+                }
+            };
+
+            var validar = function(e){
+                validarNombre(e);
+                validarRadio(e);
+                validarCheckbox(e);
+            };
+            formulario.addEventListener("submit", validar);
+        }())
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container {
+    width: 800px;
+    height: 200px;
+    border: 2px solid black;
+}
+  
+.right {
+    float: right;
+    margin: 10px;
+}
+  
+.left {
+    float: left;
+    margin: 10px;
+}
+  
+#geekHidden {
+    width: 200px;
+    height: 55px;
+    background-color: yellow;
+}
+  
+#geekVisibility {
+    width: 200px;
+    height: 55px;
+    background-color: purple;
+}

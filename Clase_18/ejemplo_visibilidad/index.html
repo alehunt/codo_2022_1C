@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Visibilidad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div>
+        <h1 style="color:green">
+            GeeksforGeeks
+        </h1>
+          
+        <b>
+            Effect of <code>display:"none"</code> 
+            and <code>visibility="hidden"</code>
+        </b>
+        <b><br>
+        <div class="container"> 
+            <div class="right">
+                <div id="geekVisibility">
+                    On clicking the below button
+                    this div tag still exists but
+                    invisible.
+                </div><br>
+                  
+                <button onclick="visibility()">
+                    visibility="hidden"
+                </button>
+                  
+                <p>
+                    This line will be still and
+                    won't go up as the <br>above
+                    div tag still exists but
+                    invisible.
+                </p>
+            </div>
+  
+            <div class="left">
+                <div id="geekHidden">
+                    On clicking the below button
+                    this div tag won't exist.
+                </div><br>
+                  
+                <button onclick="display()">
+                    display="none"
+                </button>
+                  
+                <p>
+                    This line will go up as
+                    the above div tag none.
+                </p>
+            </div>
+        </div>
+    </div>
+      
+
+    <script src="funciones.js"></script>
+</body>
+</html>
