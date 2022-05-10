@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Ejemplo Fetch</title>
+</head>
+
+<body>
+    <div class="container my-5 text-center">
+        <h1>Ejemplo Fetch</h1>
+        <button class="btn-danger w-100" onclick="traer()">Obtener Texto.txt</button>
+        <button class="btn-primary w-100" onclick="traer_dos()">Obtener desde API</button>
+        <div class="mt-5" id="contenido"></div>
+    </div>
+    
+    <script>
+        var contenido = document.querySelector('#contenido');
+        function traer() {
+            fetch('texto.txt')
+                .then(data => data.text()) 
+                .then(data => {
+                    console.log(data)
+                    contenido.innerHTML= `${data}`
+                })
+        }
+        function traer_dos() {
+            //fetch('texto.txt')
+            fetch('https://randomuser.me/api')
+                .then(res => res.json())
+                .then(res => {
+                    console.log(res)
+                    console.log(res.results[0].email)
+                    // contenido.innerHTML= `${res.results[0].email}`
+                    contenido.innerHTML= `
+                        <img src="${res.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
+                        <p>Nombre: ${res.results[0].name.first}</p>
+                        <p>Mail: ${res.results[0].email}</p>
+                    `
+                })
+        }
+    </script>
+</body>
+
+</html>

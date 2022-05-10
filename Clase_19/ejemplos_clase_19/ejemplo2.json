@@ -1,0 +1,7 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "middlename": null,
+  "edad": 30,
+  "Hijos": ["John", "Anna", "Peter"]
+}

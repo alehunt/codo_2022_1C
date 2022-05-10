@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a VUE</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <!-- Renderización declarativa -->
+    <!-- Con ID app conectamos el div con mi archivo JS -->
+    <!-- Esta va a ser la referencia que va a usar VUE para comunicarse con este contenido de mi documento -->   
+    <div id="app"> 
+
+        <h1>Hola {{nombre}}</h1>
+        <p>
+            <!-- Entre {{}} coloco una referencia que voy a usar desde JS para colocar contenido aquí dentro, modificaremos contenido de mi HTML a través de JS utilizando VUE -->
+            {{mensaje}} <br>
+            {{mensaje}} - {{nombre}}
+        </p>
+    <!-- Atributos enlazados -->
+        <a v-bind:href="url"  v-bind:title="mensaje">mail@mail.com</a>
+    
+    </div>
+
+    
+    <script src="intro-vue.js"></script>
+</body>
+</html>

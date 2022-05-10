@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <button v-on:click="contador++">Incrementar</button>
+        <button v-on:click="contador--">Decrementar</button>
+        <button v-on:click="contador2++">Incrementar 2do Contador</button>
+        <p>
+            Contador: {{contador}} | {{contador2}}
+        </p>
+        <p>
+            Resultado: {{resultado()}} | {{output}}
+        </p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

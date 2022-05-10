@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-model 2</title>    
+</head>
+
+<body>
+    <div id="ejemploVM">
+        <h1> {{ titulo }}</h1>
+        <!-- v-model -->
+        <!-- El valor que se ingrese en el input va a reemplazr a la propiedad nuevaFruta -->
+        <input type="text" v-model="nuevaFruta">
+        <button v-on:click=agregarFrutaConIF()>Click para agregar fruta</button>
+
+        <ul>
+            <!-- Recorre cada fruta en el array de frutas -->
+            <li v-for="fruta in frutas">
+                {{ fruta.nombre }} - {{ fruta.cantidad }} <span v-if="fruta.cantidad===0"> - Sin Stock</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="v-model_2.js"></script>
+</body>
+
+</html>
+

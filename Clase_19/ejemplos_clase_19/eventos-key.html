@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos-key</title>    
+</head>
+
+<body>
+    <div id="ejemploVM">
+        <h1> {{ titulo }}</h1>
+        <input type="text" v-model="nuevaFruta" @keyup.enter="agregarFrutaConIF">
+        <ul>
+            <li v-for="fruta in frutas">
+                {{ fruta.nombre }} - {{ fruta.cantidad }}
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="eventos-key.js"></script>
+</body>
+
+</html>
+

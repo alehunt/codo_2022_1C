@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computados</title>    
+</head>
+
+<body>
+    <div id="ejemploVM">
+        <h1> {{ titulo }}</h1>
+        <!-- v-model -->
+        <!-- El valor que se ingrese en el input va a reemplazr a la propiedad nuevaFruta -->
+        <input type="text" v-model="nuevaFruta">
+        <button v-on:click=agregarFrutaConIF()>Clic para agregar fruta</button>
+
+        <ul>
+            <!-- Recorre cada fruta en el array de frutas -->
+            <li v-for="fruta in frutas">
+                {{ fruta.nombre }} - <input type="number" v-model.number="fruta.cantidad">
+                <button @click=fruta.cantidad++>+</button>
+                <button @click=fruta.cantidad-->-</button>
+            </li>
+        </ul>
+        <h4>Total: {{sumarFrutas}}</h4>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="computados-3.js"></script>
+</body>
+
+</html>
+

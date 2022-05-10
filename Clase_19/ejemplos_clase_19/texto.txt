@@ -1,0 +1,3 @@
+<h1> Hola Curso de Codo a Codo Full Stack Python </h1>
+<h2> Esto es una prueba de archivo de texto </h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit consequatur maiores voluptatem molestiae minus, facilis, repellat quam ex, perferendis vero aspernatur nostrum illo quas eius quidem excepturi obcaecati voluptates dolorum.</p>

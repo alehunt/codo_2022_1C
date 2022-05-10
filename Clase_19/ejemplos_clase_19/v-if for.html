@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-if v-for</title>
+</head>
+<body>
+    <div id="ejemplo">
+
+        <h1 v-if="mostrarPrueba"> ESTO ES UNA PRUEBA </h1>
+        
+        <h1> {{ titulo }}</h1>
+        <ul>
+            <!-- Recorre cada fruta en el array de frutas -->
+            <li v-for="pepe in frutas"> 
+                {{ pepe.nombre }} - {{ pepe.cantidad }}
+                 <span v-if="pepe.cantidad===0"> - Sin Stock</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
+    <script src="v-if for.js"></script>
+</body>
+</html>
