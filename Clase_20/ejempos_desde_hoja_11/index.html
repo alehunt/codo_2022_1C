@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Vue.JS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+
+    <div id="ejemplo1">
+        <p>Kilometros:</p><input type="text" v-model="kilometros">
+        <p>Metros:</p><input type="text" v-model="metros">
+    </div>
+    <hr>
+
+    <div id="ejemplo2">
+        <p>{{title}}</p><br>
+        <a v-bind:href="hreflink" target="_blank">Ir a Google.</a><br/>
+    </div>
+    <hr>
+
+    <div id="ejemplo3">
+        <div class="info" v-bind:class="{ active: isActive, displayError: hasError }">
+            <p>{{title}}</p>
+        </div>
+    </div>
+    <hr>
+
+    <div id="ejemplo4">
+        <h2>Textbox</h2>
+        <input v-model="nombre" placeholder="Nombre">
+        <h3>Nombre: {{nombre}}</h3>
+        <h2>Textarea</h2>
+        <textarea v-model="mensaje" placeholder="Mensaje"></textarea>
+        <h1>
+            <p>{{mensaje}}</p>
+        </h1>
+        <h2>Checkbox</h2>
+        <input type="checkbox" id="checkbox" v-model="checked"> {{checked}}
+        <h2>Radio</h2>
+        <input type="radio" id="blanco" value="Blanco" v-model="seleccionado">Blanco
+        <input type="radio" id="negro" value="Negro" v-model="seleccionado">Negro
+        <h3>Elemento seleccionado: {{seleccionado}} </h3>
+        <h2>Select</h2>
+        <select v-model="lenguaje">
+            <option disabled value="">Seleccionar...</option>
+            <option>Java</option>
+            <option>Javascript</option>
+            <option>Php</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>Python</option>
+         </select>
+        <h3>Seleccionado: {{lenguaje}}</h3>
+    </div>
+    <hr>
+
+    <div id="ejemplo5">
+        <span style="font-size:25px;">Edad:</span><input v-model.number="age" type="number">
+        <p>Edad: {{age}}</p>
+        <br>
+        <span style="font-size:25px;">Mensaje:</span> <input v-model.lazy="msg">
+        <p>Mensaje: {{msg}}</p>
+        <br>
+        <span style="font-size:25px;">Ingrese Mensaje: </span><input v-model.trim="message">
+        <p>Mensaje: {{message}}</p>
+    </div>
+    <hr>
+
+    <div id="ejemplo6">
+        <h3>Sumar 100 + 200 = {{total}}</h3>
+        <button v-on:click="mostrarResultado">Presione</button>
+        <!--<button @click="mostrarResultado">Presione</button>-->
+    </div>
+    <hr>
+
+    <div id="ejemplo7">
+        <div v-bind:style="styleobj" @mouseover="changebgcolor" @mouseout="originalcolor"></div>
+    </div>
+    <hr>
+
+    <div id="ejemplo8">
+        <button @click.once="buttonclickedonce" v-bind:style="styleobj">Click .once</button>
+        <p>Resultado:{{clicknum}}</p>
+        <br><br>
+        <button @click="buttonclicked" v-bind:style="styleobj">Click Normal</button>
+        <p>Resultado:{{clicknum1}}</p>
+    </div>
+    <hr>
+
+    <div id="ejemplo9">
+        <h3>Ingrese nombre y presione Enter</h3>
+        <input type="text" v-on:keyup.enter="mostrarValor" v-bind:style="styleobj" placeholder="Ingrese nombre" />
+        <h2>{{name}}</h2>
+    </div>
+    <hr>
+
+    <div id="ejemplo10">
+        <button v-on:click="showdata" v-bind:style="styleobj">Presionar</button>
+        <span style="font-size:25px;font-weight:bold;">{{show}}</span>
+        <h1 v-if="show">Tag h1</h1>
+        <h2 v-else>Tag h2</h2>
+        <div v-show="show">
+            <h2>V-Show:</h2>
+            <img src="img/paisaje.jpg" width="100" height="100">
+        </div>
+    </div>
+    <hr>
+
+    <div id="ejemplo11">
+        <h3>Ingrese nombre de fruta y presione Enter</h3>
+        <input type="text" v-on:keyup.enter="showinputvalue" v-bind:style="styleobj" placeholder="Ingrese nombre de fruta" />
+        <h1 v-if="items.length>0">Frutas:</h1>
+        <ul>
+            <li v-for="(value, index) in items">{{index+1}} - {{value}}</li>
+        </ul>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

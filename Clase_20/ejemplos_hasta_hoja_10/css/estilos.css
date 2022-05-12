@@ -1,0 +1,40 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+li{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+input{
+    font-size: 3rem;
+}
+
+img{
+    width: 20%;
+    height: auto;
+}
+
+#ejemplo1{
+    text-align: center;
+}
+
+#ejemplo9{
+    font-size: 3rem;
+}

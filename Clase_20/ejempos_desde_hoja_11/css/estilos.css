@@ -1,0 +1,44 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+img{
+    width: 20%;
+    height: auto;
+}
+
+p,li,a{
+    font-size: 1.5rem;
+}
+
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+
+.active {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+
+.displayError{
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
