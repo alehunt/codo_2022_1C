@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chistes de Programación</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+    <div id="vueApp">
+        <header>
+            <h1>Los mejores chistes random de programación (?)</h1>
+        </header>
+        <main>
+            <div>
+                <h3>Busque su propio chiste: </h3> 
+                <button @click="borrar()">Borrar</button>
+                <button @click="obtenerChistesPromises();">Obtener chiste Promise</button>
+                <button @click="obtenerChistesSincronico();">Obtener chiste Sincrónico</button>
+                <p> {{mensaje}} </p>
+                <p><b> {{pregunta}} </b></p>
+                <p> {{chiste}}</p>
+            </div>
+        </main>
+        <footer>
+            Codo a Codo - {{fecha}}
+        </footer>
+    </div>
+    <script src="js/vueApp.js"></script>
+</body>
+
+</html>

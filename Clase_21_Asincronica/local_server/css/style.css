@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+h3 {
+    display: inline;
+}
+
+#vueApp {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    align-items: start;
+}
+
+main {
+    align-self: start;
+}
