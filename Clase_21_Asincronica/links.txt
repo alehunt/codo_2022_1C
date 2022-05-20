@@ -1,0 +1,2 @@
+JokeApi: https://sv443.net/jokeapi/v2/
+List colaborativa de apis públicas: https://github.com/public-apis/public-apis
